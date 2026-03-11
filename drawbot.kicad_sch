@@ -1,0 +1,182 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "51aea8d1-a29c-455f-a27a-3a1762aa2c4f")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 160.02 109.22)
+		(size 77.47 48.26)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "10f20e97-b3b6-4295-b300-463bc87407d0")
+		(property "Sheetname" "IO Connectors"
+			(at 160.02 108.5084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "io_connectors.kicad_sch"
+			(at 160.02 158.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "drawbot"
+				(path "/51aea8d1-a29c-455f-a27a-3a1762aa2c4f"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 109.22)
+		(size 76.2 49.53)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3b3fd120-08ac-4df7-8ff2-ea01adf86bdd")
+		(property "Sheetname" "Stepper Drivers"
+			(at 44.45 108.5084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "stepper_drivers.kicad_sch"
+			(at 44.45 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "drawbot"
+				(path "/51aea8d1-a29c-455f-a27a-3a1762aa2c4f"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 34.29)
+		(size 76.2 52.07)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "50df46c9-a482-405f-a014-61a7b7dd6645")
+		(property "Sheetname" "Power Delivery"
+			(at 44.45 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_delivery.kicad_sch"
+			(at 44.45 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "drawbot"
+				(path "/51aea8d1-a29c-455f-a27a-3a1762aa2c4f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 160.02 34.29)
+		(size 77.47 52.07)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7f1f0f02-04a9-4186-9722-87a5b25546ef")
+		(property "Sheetname" "Microcontroller"
+			(at 160.02 33.5784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 160.02 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "drawbot"
+				(path "/51aea8d1-a29c-455f-a27a-3a1762aa2c4f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
