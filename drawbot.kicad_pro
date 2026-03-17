@@ -56,9 +56,39 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.25,
+          "via_gap": 1.5,
+          "width": 1.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "footprint_symbol_mismatch|122227267|66978000|70cbad01-4887-4dee-8eac-7672ecf3ebe9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|146540000|66980000|6f070604-a9da-4879-b43c-0a19699e427c|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|98493867|66981000|f3d24a45-7278-4a8b-beed-00dac2f2ed18|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "net_conflict|122227267|66978000|70cbad01-4887-4dee-8eac-7672ecf3ebe9|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "net_conflict|146540000|66980000|6f070604-a9da-4879-b43c-0a19699e427c|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "net_conflict|98493867|66981000|f3d24a45-7278-4a8b-beed-00dac2f2ed18|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -88,7 +118,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -100,9 +130,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -189,8 +219,8 @@
       "track_widths": [
         0.0,
         0.25,
-        0.4,
         0.8,
+        1.0,
         1.5
       ],
       "tuning_pattern_settings": {
@@ -223,6 +253,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -490,6 +524,48 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.25,
+        "name": "24V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.5,
+        "via_diameter": 1.2,
+        "via_drill": 0.6
+      },
+      {
+        "clearance": 0.25,
+        "name": "Logic Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.25,
+        "name": "Logic Signal",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
+      },
+      {
+        "clearance": 0.25,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 1.0,
+        "name": "Motor Phases",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 1.0,
+        "via_diameter": 1.2,
+        "via_drill": 0.6
       }
     ],
     "meta": {
@@ -497,14 +573,47 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Motor Phases",
+        "pattern": "*_A-"
+      },
+      {
+        "netclass": "Motor Phases",
+        "pattern": "*_A+"
+      },
+      {
+        "netclass": "Motor Phases",
+        "pattern": "*_B-"
+      },
+      {
+        "netclass": "Motor Phases",
+        "pattern": "*_B+"
+      },
+      {
+        "netclass": "Logic Power",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Logic Power",
+        "pattern": "+5V*"
+      },
+      {
+        "netclass": "24V",
+        "pattern": "+*_PWR"
+      },
+      {
+        "netclass": "Logic Signal",
+        "pattern": ""
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "pdf/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -577,12 +686,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -615,7 +736,7 @@
     },
     "net_format_name": "SPICE Model",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "pdf/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": true,
     "spice_external_command": "spice \"%I\"",

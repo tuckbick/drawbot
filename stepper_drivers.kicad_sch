@@ -1751,7 +1751,7 @@
 			)
 		)
 	)
-	(global_label "+24V_MOTORS"
+	(global_label "+MOTOR_PWR"
 		(shape input)
 		(at 176.53 26.67 0)
 		(fields_autoplaced yes)
@@ -1773,7 +1773,7 @@
 			)
 		)
 	)
-	(global_label "Y_A1"
+	(global_label "Y_A+"
 		(shape input)
 		(at 144.78 95.25 0)
 		(fields_autoplaced yes)
@@ -1927,7 +1927,7 @@
 			)
 		)
 	)
-	(global_label "Z_A2"
+	(global_label "Z_A-"
 		(shape input)
 		(at 144.78 147.32 0)
 		(fields_autoplaced yes)
@@ -1949,7 +1949,7 @@
 			)
 		)
 	)
-	(global_label "+24V_MOTORS"
+	(global_label "+MOTOR_PWR"
 		(shape input)
 		(at 176.53 135.89 0)
 		(fields_autoplaced yes)
@@ -1993,7 +1993,7 @@
 			)
 		)
 	)
-	(global_label "+24V_MOTORS"
+	(global_label "+MOTOR_PWR"
 		(shape input)
 		(at 176.53 80.01 0)
 		(fields_autoplaced yes)
@@ -2037,7 +2037,7 @@
 			)
 		)
 	)
-	(global_label "Y_A2"
+	(global_label "Y_A-"
 		(shape input)
 		(at 144.78 91.44 0)
 		(fields_autoplaced yes)
@@ -2059,7 +2059,7 @@
 			)
 		)
 	)
-	(global_label "Z_B1"
+	(global_label "Z_B+"
 		(shape input)
 		(at 144.78 158.75 0)
 		(fields_autoplaced yes)
@@ -2169,7 +2169,7 @@
 			)
 		)
 	)
-	(global_label "Y_B2"
+	(global_label "Y_B-"
 		(shape input)
 		(at 144.78 99.06 0)
 		(fields_autoplaced yes)
@@ -2191,7 +2191,7 @@
 			)
 		)
 	)
-	(global_label "X_A1"
+	(global_label "X_A+"
 		(shape input)
 		(at 144.78 41.91 0)
 		(fields_autoplaced yes)
@@ -2235,7 +2235,7 @@
 			)
 		)
 	)
-	(global_label "X_B2"
+	(global_label "X_B-"
 		(shape input)
 		(at 144.78 45.72 0)
 		(fields_autoplaced yes)
@@ -2257,7 +2257,7 @@
 			)
 		)
 	)
-	(global_label "Z_A1"
+	(global_label "Z_A+"
 		(shape input)
 		(at 144.78 151.13 0)
 		(fields_autoplaced yes)
@@ -2345,7 +2345,7 @@
 			)
 		)
 	)
-	(global_label "Y_B1"
+	(global_label "Y_B+"
 		(shape input)
 		(at 144.78 102.87 0)
 		(fields_autoplaced yes)
@@ -2433,7 +2433,7 @@
 			)
 		)
 	)
-	(global_label "X_A2"
+	(global_label "X_A-"
 		(shape input)
 		(at 144.78 38.1 0)
 		(fields_autoplaced yes)
@@ -2477,7 +2477,7 @@
 			)
 		)
 	)
-	(global_label "Z_B2"
+	(global_label "Z_B-"
 		(shape input)
 		(at 144.78 154.94 0)
 		(fields_autoplaced yes)
@@ -2521,7 +2521,7 @@
 			)
 		)
 	)
-	(global_label "X_B1"
+	(global_label "X_B+"
 		(shape input)
 		(at 144.78 49.53 0)
 		(fields_autoplaced yes)
@@ -2696,7 +2696,7 @@
 				)
 			)
 		)
-		(property "Value" "Stepper Driver (X-Axis)"
+		(property "Value" "X-Axis"
 			(at 125.73 44.45 90)
 			(effects
 				(font
@@ -3894,7 +3894,7 @@
 				)
 			)
 		)
-		(property "Value" "Stepper Driver (Y-Axis)"
+		(property "Value" "Y-Axis"
 			(at 125.73 97.79 90)
 			(effects
 				(font
@@ -4009,7 +4009,7 @@
 				)
 			)
 		)
-		(property "Value" "Stepper Driver (Z-Axis)"
+		(property "Value" "Z-Axis"
 			(at 125.73 153.67 90)
 			(effects
 				(font

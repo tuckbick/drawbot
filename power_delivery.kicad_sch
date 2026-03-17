@@ -1850,7 +1850,7 @@
 		)
 		(uuid "fee13efa-8dcc-4cc9-9e33-055bfde32fd1")
 	)
-	(global_label "+24V_MOTORS"
+	(global_label "+MOTOR_PWR"
 		(shape input)
 		(at 156.21 39.37 0)
 		(fields_autoplaced yes)
@@ -1872,7 +1872,7 @@
 			)
 		)
 	)
-	(global_label "+24V_LASER"
+	(global_label "+LASER_PWR"
 		(shape input)
 		(at 156.21 87.63 0)
 		(fields_autoplaced yes)
@@ -2243,7 +2243,7 @@
 				)
 			)
 		)
-		(property "Value" "24v (motors)"
+		(property "Value" "Motor Power"
 			(at 48.26 45.466 0)
 			(effects
 				(font
@@ -2445,7 +2445,7 @@
 				)
 			)
 		)
-		(property "Value" "24v (laser)"
+		(property "Value" "Laser Power"
 			(at 48.26 93.726 0)
 			(effects
 				(font
@@ -2512,7 +2512,7 @@
 				)
 			)
 		)
-		(property "Value" "24v (everything else)"
+		(property "Value" "System Power"
 			(at 48.26 147.32 0)
 			(effects
 				(font
