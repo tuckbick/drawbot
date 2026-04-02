@@ -477,7 +477,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "drawbot.kicad_pro",
+    "filename": "drawbot_controller.kicad_pro",
     "version": 3
   },
   "net_settings": {
